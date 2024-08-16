@@ -1,0 +1,61 @@
+<html>
+<head>
+<style>
+    .pp{
+      width:300px;
+     }
+     .pa{
+       width:50px;
+       border-radius:25px;
+            }
+     .sun{
+       position:relative;
+       top:0;
+       left:0;
+       display:inline-block;
+      }
+      .sam{
+          display:flex;
+         flex-direction:row;
+         width:250px;
+         box-shadow:2px 2px 3px rgba(0,0,0,0.65);
+         padding:10px 10px;
+         position:absolute;
+         right:-230px;
+         bottom:190px;
+         opacity:0;    
+         pointer-events:none; 
+          }
+       .img{
+          margin-right:15px;
+        }
+        .com{
+          font-size:14px;
+          color:black;
+          margin-bottom:5px;
+          font-weight:bold;
+        }
+        .ss{
+            font-size:12px;
+            color:gray;
+          }
+         div{
+           font-family:Arial;
+          }
+          .sun:hover .sam{
+            opacity:1;          
+          }
+</style>
+</head>
+<body>
+  <div class="sun"><img class="pp" src="https://images.pexels.com/photos/736230/pexels-photo-736230.jpeg?cs=srgb&dl=pexels-jonaskakaroto-736230.jpg&fm=jpg">
+      <div class="sam">
+          <div class="img"><img class="pa" src="https://5.imimg.com/data5/SELLER/Default/2022/10/CA/JA/IW/1486667/fresh-blue-lotus-flower-500x500.jpg"></div>
+          <div>
+            <div class="com"> Green Plants Association</div>
+            <div class="ss"> 1.5M subscribers </div>
+          </div>
+       </div>
+  </div>
+</body>
+</html>
