@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .form{
+           width:300px;
+           height:900px;
+           border:none;
+           border-radius: 10px;
+           box-shadow:2px 2px 15px rgba(60,60,60,0.5);
+           padding:25px;
+           background:linear-gradient(yellow,blue);
+           color:rgb(10, 9, 9);
+        }
+        button{
+          margin-top:20px;
+          padding:10px 20px 10px;
+          display:flex;
+          justify-content: center;
+        }
+        select{
+         
+          padding:10px;
+          overflow: scroll;
+          
+        }
+        .pop{
+          padding:10px;
+        }
+    </style>
+  
+  
+       
+</head>
+<body>
+    
+        <form  class="form">
+             Full name: <br>
+             <input class="pop" type="text" required name="Name" placeholder="Enter name"><br>
+             Email:<br>
+             <input class="pop" type="email" name="email" required placeholder="Enter email"><br>
+             MobileNo: <br>
+             <input class="pop"  type="tel" maxlength="10" pattern="^\d{10}$" required placeholder="Enter MobileNo"> <br>
+             Gender:<br>
+              <select>
+              <option>Select</option>
+              <option>Male</option>
+              <option>Female</option>
+              <option>Others</option>
+              <option>Not to Mention</option>
+             </select><br>
+             Age: <br>
+             <input class="pop" type="number" placeholder="Enter Age" maxlength="2" required> <br>
+             Current Location: <br>
+             <input class="pop" type="text" placeholder="Enter Current Location" required> <br>
+             
+             Highest Education:<br>
+             <select>Your Degree
+              <option>Select</option>
+              <option>BSC</option>
+              <option>B.Tech</option>
+              <option>M.Tech</option>
+             </select><br>
+             College Name: <br>
+             <input class="pop" type="text" placeholder="Enter College Name" required> <br>
+           
+             Specialization: <br>
+             <select>
+              <option>Select</option>
+              <option>CSE</option>
+              <option>IT</option>
+              <option>ECE</option>
+              <option>EEE</option>
+              <option>MECH</option>
+              <option>CIVIL</option>
+              <option>AIML</option>
+              <option>ROBOTICS</option>
+             </select><br>
+             Graduation Percentage:
+             <input class="pop" type="number" pattern="[0-9]+(\.[0-9]{1,2})?%" title="Enter a valid percentage" maxlength="4" required> <br>
+             Graduation Year: <br>
+             <select>
+               <option>Select</option>
+               <option>2024</option>
+               <option>2023</option>
+               <option>2022</option>
+              </select><br>
+              Disability:<br>
+              <select>
+                <option>Select</option>
+                <option>Yes</option>
+                <option>No</option>
+                <option>Not to disclose</option>
+               
+              </select> <br>
+             
+              Authorized to work in the country <br>
+              <select>
+                <option>Select</option>
+                <option>Yes</option>
+                <option>No</option>
+                
+               
+              </select> <br>
+              <input type="checkbox" required>I Agree the terms and Conditions<br>
+             <button onclick="
+               if(!name || ! email){
+                 alert('Fill all the required details');
+               }
+               else{
+                 alert('Your form has been submitted');
+               }" >Submit</button>
+        </form>
+        <script>
+       /*   document.querySelector('.form').onsubmit = function(event) {
+    event.preventDefault(); // Prevent the form from submitting
+    var name = document.querySelector('[placeholder="Enter name"]').value;
+    var email = document.querySelector('[placeholder="Enter email"]').value;
+
+    if (name && email) {
+        console.log("Form submitted successfully!");
+        alert('Thank you for Your Response');
+        // You can replace this with your desired behavior (e.g., showing a popup)
+    }
+}; */
+
+    </script>
+    
+</body>
+</html>

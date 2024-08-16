@@ -1,0 +1,35 @@
+<html>
+  <head>
+     <style>
+         .cart{
+             background-color:yellow;
+           }
+           .buy{
+              background-color:orange;
+            }
+     </style>
+  </head>
+  <body>
+     <p>Adults Plain Cotton T-shirt<p>
+     <p>Price:$7.99</p>
+     <button class="cart" onclick=" alert('Added');">Add to cart</button>
+     <button class="buy" onclick="
+     console.log('Loading...'); 
+     alert('Purchased');" 
+     >Buy now</button>
+     <script>
+         const name="Myla Sada Sivani";
+         console.log(`My name is:${name}`);
+         let cost=1*5+2*3+1*9;
+         let tax=(1*5+2*3+1*9)*0.1;
+         let totalcost = cost+tax;
+         console.log(`Cost of food:$${cost}`);
+         console.log(`Tax(10%):$${tax}`);
+         console.log(`Total cost:$${totalcost}`);
+          console.log(typeof (name));
+          console.log(typeof (totalcost));
+           console.log(typeof (tax));
+
+     </script>
+  </body>
+</html>
